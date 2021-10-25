@@ -7,10 +7,10 @@ const assertEqual = function(actual, expected) {
 };
 
 const head = function(arr) {
-  return arr[0]
+  return arr[0];
 };
 
 assertEqual(head([5,6,7]), 5);
 assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
-assertEqual(head([5]), 4); 
-assertEqual(head([]), undefined)
+assertEqual(head([5]), 4);
+assertEqual(head([]), undefined);
