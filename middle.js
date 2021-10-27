@@ -28,9 +28,14 @@ const middle = function(arr) {
   let newArr = []
   if (arr.length <= 2) {
     return newArr
+  } else if (arr.length % 2 !== 0) {
+    let mid = Math.floor(arr.length / 2)
+    newArr.push(arr[mid])
+    return newArr
   }
 }
 
 console.log(middle([]))
 console.log(middle([1]))
 console.log(middle([1,2]))
+console.log(middle([1,2,3,4,5]))
